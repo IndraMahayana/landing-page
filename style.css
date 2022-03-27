@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: #333;
+}
+::-webkit-scrollbar-thumb:hover {   
+    background: #555;
+}
+
+/* navbar */
+header {
+    position: fixed;
+    width: 100%;
+}
+
+.navbar {
+    padding: 0 10%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 35px;
+    color: #333;
+    background-color: transparent;
+}
+
+.navbar ul {
+    font-size: 20px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 22px;
+    justify-content: end;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.scroll-navbar {
+    background-color: DodgerBlue;
+    color: white;
+}
+
+/* home */
+.home {
+    background-image: url(image/home.jpg);
+    background-size: cover;
+    background-position: center -110px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: 'Patua One', cursive;
+    color: #333;
+}
+
+.home .home-text-1 {
+    padding: 23% 0 0 10%;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px white;
+}
+
+.home .home-text-2 {
+    padding: 0 0 0 10%;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px rgba(173, 173, 173, 0.5);
+}
+
+.home .home-text-1 span {
+    color: DodgerBlue;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* about */
+.about {
+    padding: 100px 10%;
+    box-shadow: 0px 2px 4px 2px rgb(32, 32, 32);
+}
+
+.about .about-title {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Patua One', cursive;
+}
+
+.about .aboutUs {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    column-gap: 10%;
+}
+
+.about .aboutUs .aboutUs-text {
+    padding: 10% 0;
+}
+
+.about .aboutUs .aboutUs-text .aboutUs-text-1 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.about .aboutUs .aboutUs-text .aboutUs-text-2 {
+    margin: 10px 50px 0 0;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.about img {
+    padding: 10% 0;
+    width: 100%;
+}
+
+/* product */
+.product {
+    background-color: rgb(14, 14, 14);
+    padding: 100px 10%;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.product-title {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Patua One', cursive;
+    color: white;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    padding: 5% 0;
+}
+
+.product-card {
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgba(163, 163, 163, 0.5);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.product-card .product-card-text {
+    height: -100%;
+    background-color: rgb(32, 32, 32);
+    margin-top: -5px;
+    padding: 20px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.product-card .product-card-text .product-card-text-title {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.product-card .product-card-text .product-card-text-price {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0 20px 0;
+}
+
+.product-card .product-card-text button {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: rgb(32, 32, 32);
+    background-color: white;
+    font-size: 15px;
+}
+
+.product-card .product-card-text button:hover {
+    background-color: DodgerBlue;
+    color: white;
+}
+
+/* contact */
+.contact {
+    margin: 100px 10%;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Patua One', cursive;
+}
+
+.contact-input {
+    display: grid;
+    gap: 5px;
+    margin: 5% 25%;
+}
+
+.contact-input input {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.contact-input-1 { 
+    grid-row: 1;
+}
+
+.contact-input-2 {
+    grid-row: 1;
+}
+
+.contact-input-3 {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+}
+
+.contact-input-4 {
+    height: 100px;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+
+.contact-button {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-color: dodgerblue;
+    cursor: pointer;
+    width: 200px;
+    background-color: DodgerBlue;
+    color: white;
+}
+
+.contact-button:hover {
+    background-color: white;
+    color: DodgerBlue;
+    border-color: black;
+}
+
+/* footer */
+footer {
+    background-color: #333;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.footer-grid {
+    margin: 0 10% 0 20%;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.footer-grid ul {
+    list-style: none;
+    color: white;
+}
+
+.footer-grid li h4, .footer-list-logo h4 {
+    color: white;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.footer-grid li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.footer-grid li a:hover {
+    color: DodgerBlue;
+}
+
+.footer-grid .footer-list-logo ul li {
+    display: inline-block;
+}
+
+.footer-grid .footer-list-logo ul li a i {
+    margin-right: 5px;
+    font-size: 25px;
+}
