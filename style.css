@@ -54,11 +54,18 @@ header {
 
 .navbar li a {
     text-decoration: none;
-    color: #333;
 }
 
 .scroll-navbar {
     background-color: DodgerBlue;
+    color: white;
+}
+
+.a-color1, .a-color2, .a-color3, .a-color4 {
+    color: #333;
+}
+
+.change-a-color {
     color: white;
 }
 
